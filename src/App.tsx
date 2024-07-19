@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Sell from './pages/Sell';
 import CreateRaffle from './pages/raffle/CreateRaffle';
 import CreatePrizes from './pages/prizes/CreatePrizes';
+import CreateTickets from './pages/tickets/CreateTickets';
 
 import "./index.css"
 
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           <Route path="/ventas" element={<Sell />} />
           <Route path='/nueva-rifa' element={<CreateRaffle />} />
           <Route path='/nuevo-premio' element={<CreatePrizes />} />
+          <Route path='/nuevos-boletos' element={<CreateTickets />} />
         </Routes>
       </Layout>
     </Router>
