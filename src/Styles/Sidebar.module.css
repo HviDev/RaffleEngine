@@ -1,0 +1,128 @@
+/* Sidebar.module.css */
+.sidebarContainer {
+    height: 91vh;
+    background-color: var(--background-color);
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    
+  }
+  
+  .sidebarContainerOpen {
+    width: 240px;
+  }
+  
+  .sidebarContainerClosed {
+    width: 80px;
+  }
+  
+  .navList {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navItem {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .navLink {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+  
+  }
+  
+  .navLinkOpen {
+    justify-content: flex-start;
+  }
+  
+  .navLinkClosed {
+    justify-content: center;
+  }
+  
+  .navLink:hover {
+    background-color:var(--hoover-color);
+    color: var(--text-color);
+  }
+  
+  .navLinkActive {
+    background-color: #007bff;
+    color: var(--text-color);
+  }
+  
+  .navLink img {
+    transition: margin-right 0.3s;
+  }
+  
+  .navLink span {
+    display: inline;
+    margin-left: 1.25rem;
+
+  }
+  
+  .navLink span.hidden {
+    display: none;
+  }
+  
+  .toggleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: auto;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .toggleButton img {
+    transition: transform 0.3s;
+  }
+  
+
+  .iconWrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+ 
+
+  }
+  
+
+  .subNavList {
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:center;
+   list-style-type: none;
+  
+  }
+
+  .subNavItem {
+    width: 100%;
+    padding-left: 2rem;
+    border-radius: 0.5rem;
+    
+  }
+
+  .subNavItem:hover {
+    background-color: var(--hoover-color);
+  }
+
+  .subNavLink {
+    text-decoration: none;
+    color: var(--text-color)
+    
+  }
