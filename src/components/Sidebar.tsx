@@ -29,7 +29,7 @@ const navItems: NavItem[] = [
     label: 'Rifa',
     subItems: [
       {href:'/nueva-rifa', label: 'Nueva rifa'},
-      {href:'/todas', label: 'Administrar rifas'}
+      {href:'/admin-rifa', label: 'Administrar rifas'}
     ]
   },
   {
@@ -37,7 +37,7 @@ const navItems: NavItem[] = [
     label: 'Premios',
     subItems: [
       {href:'/nuevo-premio', label: 'Nuevo Premio'},
-      {href:'/todas', label: 'Administrar Premios'}
+      {href:'/admin-premios', label: 'Administrar Premios'}
     ]
   },
   { 

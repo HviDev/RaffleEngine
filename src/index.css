@@ -57,3 +57,51 @@ body {
   background-color: var(--hoover-color);
   color: var(--text-color);
 }
+
+
+
+
+/*this is for the tables */
+.container {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.card {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.table {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.table thead,
+.table tbody,
+.table tr,
+.table th,
+.table td {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+
+/* Define the size and shape of the status circle */
+.status-circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Green circle for active state */
+.active {
+  background-color: rgb(0, 248, 0);
+}
+
+/* Red circle for inactive state */
+.inactive {
+  background-color: red;
+}
