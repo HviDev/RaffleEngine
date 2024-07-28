@@ -83,8 +83,10 @@ body {
 .table tr,
 .table th,
 .table td {
+ 
   color: var(--text-color);
   background-color: var(--background-color);
+
 }
 
 
@@ -94,6 +96,7 @@ body {
   height: 1rem;
   border-radius: 50%;
   display: inline-block;
+ 
 }
 
 /* Green circle for active state */
@@ -104,4 +107,12 @@ body {
 /* Red circle for inactive state */
 .inactive {
   background-color: red;
+}
+
+
+/*Column space into the tables bootstrap*/
+#bulk-select-body td, #bulk-select-body th {
+  padding-left: 1rem; 
+  padding-right: 1rem; 
+ 
 }

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styles from '../Styles/Sidebar.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeIcon from '../assets/icons/homeicon.svg?react';
-import TicketIcon from '../assets/icons/ticketIcon.svg?react';
 import OrderIcon from '../assets/icons/orderIcon.svg?react';
 import CustumerIcon from '../assets/icons/custumerIcon.svg?react';
 import ArrowLeftIcon from '../assets/icons/arrowLeftIcon.svg?react';
@@ -38,14 +37,6 @@ const navItems: NavItem[] = [
     subItems: [
       {href:'/nuevo-premio', label: 'Nuevo Premio'},
       {href:'/admin-premios', label: 'Administrar Premios'}
-    ]
-  },
-  { 
-    icon: TicketIcon, 
-    label: 'Boletos', 
-    subItems: [
-      { href: '/nuevos-boletos', label: 'Nuevo set de Boletos' },
-      { href: '/nuevo-boleto', label: 'Administrar Boletos' },
     ]
   },
   { href: '/clientes', icon: CustumerIcon, label: 'Clientes' },
