@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   return (
     <header className="d-flex justify-content-between align-items-center p-3 border-bottom">
     <div className="navbar-brand">
-      <a href="/" className="navbar-brand">Raffle Engine v1</a>
+      <a href="/" className="navbar-brand">Raffle Manager v1</a>
     </div>
     <div className="d-flex align-items-center ml-auto">
       <ThemeToggleButton />

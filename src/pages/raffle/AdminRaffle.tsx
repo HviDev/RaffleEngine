@@ -31,7 +31,7 @@ const TicketsTable: React.FC = () => {
       startDate: '24-07-01',
       endDate: '24-07-31',
       ticketPrice: 250,
-      maxTickets:1000,
+      maxTickets: 1000,
       firstPrize: 'Casa en León',
       secondPrize: 'Viaje todo pagado para dos personas',
       thirdPrize: '15,000 M.N',
@@ -43,7 +43,7 @@ const TicketsTable: React.FC = () => {
       startDate: '24-07-01',
       endDate: '24-07-31',
       ticketPrice: 250,
-      maxTickets:1500,
+      maxTickets: 1500,
       firstPrize: 'Casa en algún lugar',
       secondPrize: 'Viaje a Puerto Vallarta para dos personas',
       thirdPrize: '15,000 M.N',
@@ -55,11 +55,11 @@ const TicketsTable: React.FC = () => {
       startDate: '24-07-01',
       endDate: '24-07-31',
       ticketPrice: 300,
-      maxTickets:2000,
+      maxTickets: 2000,
       firstPrize: 'Casa en algún lugar de la mancha',
       secondPrize: 'Viaje a Mazatlan para dos personas',
       thirdPrize: '12,000 M.N',
-      isActive: false,  
+      isActive: false,
     },
   ];
 
@@ -139,6 +139,8 @@ const TicketsTable: React.FC = () => {
 
   const showActions = selectedRows.size > 0;
 
+
+
   return (
     <div className="container d-flex justify-content-center  align-items-center">
       <div className="card">
@@ -184,9 +186,17 @@ const TicketsTable: React.FC = () => {
                   <td style={{ whiteSpace: 'nowrap' }}>{ticket.endDate}</td>
                   <td>{ticket.ticketPrice}</td>
                   <td>{ticket.maxTickets}</td>
-                  <td>{ticket.firstPrize}</td>
-                  <td>{ticket.secondPrize}</td>
-                  <td>{ticket.thirdPrize}</td>
+                  <td>
+                    <span className="text-truncate" title={ticket.firstPrize}>{ticket.firstPrize}</span>
+                  </td>
+
+                  <td>
+                    <span className="text-truncate" title={ticket.secondPrize}>{ticket.secondPrize}</span>
+                  </td>
+                  
+                  <td>
+                    <span className="text-truncate" title={ticket.thirdPrize}>{ticket.thirdPrize}</span>
+                  </td>
                   <td>
                     <span
                       className={`status-circle ${ticket.isActive ? 'active' : 'inactive'}`}

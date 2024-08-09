@@ -6,6 +6,8 @@
   --icon-color:#000000;
   --hoover-color:#eaecec;
   --border-color:#000000;
+  --modal-background-color: #00000080;
+
 
 }
 
@@ -18,7 +20,6 @@
   --icon-color:#ffffff;
   --hoover-color:#5c5c5d;
   --border-color:#eaecec;
-  
 }
 
 
@@ -115,4 +116,15 @@ body {
   padding-left: 1rem; 
   padding-right: 1rem; 
  
+}
+
+
+.text-truncate {
+  max-width: 100px; /* Ajusta según sea necesario */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
 }
